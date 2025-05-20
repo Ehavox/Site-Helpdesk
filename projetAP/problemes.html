@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demande d'assistance - ArchiTech'Tools</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- nav -->
+    <div class="w3-top">
+        <div class="w3-bar w3-light-blue w3-card w3-large">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Accueil</a>
+            <a href="problemes.html" class="w3-bar-item w3-button w3-padding-large w3-white">Assistance</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Contact</a>
+            <a href="inscription.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Inscription</a>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="w3-container w3-center w3-padding-64 w3-light-blue" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">Demande d'assistance</h1>
+        <p class="w3-xlarge">ArchiTech'Tools</p>
+        <figure>
+            <img src="images/help.jpg" alt="Assistance informatique" title="Assistance technique">
+        </figure>
+    </header>
+
+    <!-- body -->
+    <main class="w3-container w3-padding-64">
+        <section class="w3-content w3-center">
+            <h2 class="w3-xxlarge">Besoin d’aide informatique ?</h2>
+            <p class="w3-large">L’assistance ArchiTech'Tools est là pour vous accompagner.</p>
+
+            <p class="w3-padding-16">
+                Que vous rencontriez un problème technique, logiciel ou matériel, notre service d’assistance est à votre
+                disposition.
+                Décrivez votre souci, et nous vous répondrons rapidement avec une solution adaptée.
+            </p>
+
+            <div class="w3-container w3-card w3-padding-32 w3-light-grey w3-margin-top">
+                <h3>Ouvrir un ticket d’assistance</h3>
+
+                <form action="ticketsend.php" method="post" class="w3-container">
+                    <label for="pseudo">Nom ou identifiant :</label>
+                    <input class="w3-input w3-border" type="text" id="pseudo" name="pseudo" required><br>
+
+                    <label for="email">Email :</label>
+                    <input class="w3-input w3-border" type="email" id="email" name="email" required><br>
+
+                    <label for="type_probleme">Type de problème :</label>
+                    <select class="w3-select w3-border" id="type_probleme" name="type_probleme" required>
+                        <option value="" disabled selected>Choisissez un type</option>
+                        <option value="reseau">Réseau</option>
+                        <option value="logiciel">Logiciel</option>
+                        <option value="materiel">Matériel</option>
+                        <option value="acces">Accès / authentification</option>
+                        <option value="autre">Autre</option>
+                    </select><br><br>
+
+                    <label for="message">Décrivez votre demande :</label>
+                    <textarea class="w3-input w3-border" id="message" name="message" rows="6" required></textarea><br>
+
+                    <button class="w3-button w3-black w3-margin-top" type="submit">Envoyer le ticket</button>
+                </form>
+            </div>
+
+            <div class="w3-container w3-padding-32">
+                <h3>Exemples de demandes fréquentes</h3>
+                <ul class="w3-ul w3-border w3-white w3-center">
+                    <li>Connexion impossible au réseau local ou Wi-Fi</li>
+                    <li>Problème d'installation ou de plantage d'un logiciel</li>
+                    <li>Écran noir ou panne matérielle</li>
+                    <li>Accès refusé à votre compte utilisateur</li>
+                    <li>Demande de conseils sur un outil informatique</li>
+                </ul>
+
+                <h3 class="w3-padding-32">Notre accompagnement</h3>
+                <ul class="w3-ul w3-border w3-white w3-center">
+                    <li>Diagnostic rapide et précis</li>
+                    <li>Assistance à distance ou en présentiel</li>
+                    <li>Suivi par mail ou téléphone de votre demande</li>
+                    <li>Résolution personnalisée selon votre environnement informatique</li>
+                </ul>
+            </div>
+
+            <p class="w3-large w3-padding-32">
+                Professionnels ou particuliers, ArchiTech'Tools est votre partenaire pour résoudre efficacement tous vos
+                incidents numériques.
+            </p>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="w3-container w3-black w3-padding-64 w3-center w3-opacity">
+        <div class="w3-xlarge w3-padding-32">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-discord w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>© 2025 ArchiTech'Tools - Propulsé par <a href="https://www.w3schools.com/w3css/default.asp"
+                target="_blank">w3.css</a></p>
+        <p><a href="conf.html">Politique de confidentialité</a></p>
+        <p><a href="problemes.html">Retour en haut</a> | <a href="/padmin/admin.php">Administration</a></p>
+    </footer>
+
+</body>
+
+</html>
